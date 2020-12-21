@@ -1,21 +1,36 @@
 # react-native-responsive-size
 
-no
+Support typescripts
 
 ## Installation
 
 ```sh
-npm install react-native-responsive-size
+yarn add react-native-responsive-size
 ```
 
 ## Usage
 
 ```js
-import ResponsiveSize from "react-native-responsive-size";
+import * as React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { heightResponsive } from 'react-native-responsive-size';
 
-// ...
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View style={{ width: '100%', height: heightResponsive(200), backgroundColor: 'green' }}>
 
-const result = await ResponsiveSize.multiply(3, 7);
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
 ```
 
 ## Contributing

@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { StyleSheet, View } from 'react-native';
 import { heightResponsive } from 'react-native-responsive-size';
 
