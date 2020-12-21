@@ -1,19 +1,14 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import ResponsiveSize from 'react-native-responsive-size';
-
+import { StyleSheet, View } from 'react-native';
+import { heightResponsive } from 'react-native-responsive-size';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    ResponsiveSize.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <View style={{ width: '100%', height: heightResponsive(200), backgroundColor: 'green' }}>
+
+      </View>
     </View>
   );
 }
@@ -21,8 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
   box: {
     width: 60,

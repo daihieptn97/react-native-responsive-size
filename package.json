@@ -32,8 +32,8 @@
     "bootstrap": "yarn example && yarn && yarn pods"
   },
   "keywords": [
-    "react-native",
-    "ios",
+    "react-native-lightweight-responsive",
+    "react-native-responsive-size",
     "android"
   ],
   "repository": "https://github.com/daihieptn97/react-native-responsive-size",
